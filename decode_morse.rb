@@ -36,17 +36,18 @@ def decode_word(word)
     @current_word=word.split
     @decoded_word=''
    
-    @current_word.each do |letter|
-          decode_char(letter)
-          @decode_word += decode_char(letter)
+    @current_word.each do |char|
+          decode_char(char)
+          @decoded_word += decode_char(char)
     end
-    print("#{@decode_word}")
+    
 end
 def decode_message(message)
-    @messages=message.split("")
-    @messages.each do |mess|
-        decode_word(mess)
-    end
+  @words = message.split('   ')
+  @words.each do |word|
+    decode_word(word)
+  end
 end
+
 
 decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
