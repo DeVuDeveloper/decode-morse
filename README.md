@@ -1,10 +1,18 @@
 # DECODE MORSE CODE
+## Decoding morse code with ruby
 
-# screenshots
+	
+## Technologies
+Project is created with:
+* Ruby
 
-![screenshot](img/first.PNG)
- 
-## Getting Started
+ ## Setup
+To run this project, install it locally using:
+- cd Desktop
+- git clone https://github.com/VuDej/decode-morse.git
+- irb
+- require "./decode_morse.rb"
+- decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
 
 ## Authors
@@ -25,8 +33,6 @@
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/mugishasam123/vet-clinic-database/issues/).
 
 ## Show your support
 

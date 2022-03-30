@@ -49,4 +49,6 @@ def decode_message(message)
   end
 end
 
+decode_char('.-')
+decode_word('-- -.--   -. .- -- .')
 decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
