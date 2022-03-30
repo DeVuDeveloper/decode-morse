@@ -28,20 +28,20 @@
 }
 
 def decode_char(char)
-    @current_char=@morse_chat[char]
-    @current_char
+  @current_char = @morse_chat[char]
+  @current_char
 end
 
 def decode_word(word)
-    @current_word=word.split
-    @decoded_word=''
-   
-    @current_word.each do |char|
-          decode_char(char)
-          @decoded_word += decode_char(char)
-    end
-    
+  @current_word = word.split
+  @decoded_word = ''
+
+  @current_word.each do |char|
+    decode_char(char)
+    @decoded_word += decode_char(char)
+  end
 end
+
 def decode_message(message)
   @words = message.split('   ')
   @words.each do |word|
@@ -49,5 +49,4 @@ def decode_message(message)
   end
 end
 
-
-decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
